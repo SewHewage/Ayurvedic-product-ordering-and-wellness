@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+        <color name="ayurvedic_background">#F4EFEA</color> <!-- Soft beige -->
+        <color name="ayurvedic_text">#4E3629</color>       <!-- Deep brown -->
+        <color name="ayurvedic_hint">#8B6F56</color>       <!-- Muted brown -->
+        <color name="ayurvedic_accent">#0B9548</color>     <!-- Herbal green -->
+        <color name="ayurvedic_button">#CED036</color>     <!-- Olive green -->
+        <color name="gray">#B0BEC5</color>
+        <color name="ayurvedic_background_start">#F4EFEA</color> <!-- Soft beige -->
+        <color name="ayurvedic_background_end">#A3C89A</color>   <!-- Herbal green -->
+        <color name="ayurvedic_title">#4E3629</color>            <!-- Deep brown -->
+        <color name="light_beige">#F5F5DC</color>
+        <color name="dark_green">#4CAF50</color>
+        <color name="brown">#8B4513</color>
+        <color name="button_green">#388E3C</color>
+
+    </resources>

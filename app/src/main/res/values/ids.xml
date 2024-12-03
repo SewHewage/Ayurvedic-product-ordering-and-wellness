@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="recycler_view_appointments" type="id" />
+    <item name="iv_add_to_cart" type="id" />
+    <item name="iv_buy_now" type="id" />
+    <item name="iv_delete_product" type="id" />
+    <item name="tv_order_id" type="id" />
+    <item name="tv_quantity" type="id" />
+    <item name="tv_price" type="id" />
+    <item name="tv_order_date" type="id" />
+    <item name="tv_order_date2" type="id" />
+    <item name="recyclerViewOrders" type="id" />
+    <item name="view_orders_layout" type="id" />
+</resources>

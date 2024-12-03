@@ -1,0 +1,70 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Ayurvedic Wellness"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center" />
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Password Input Field -->
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#000"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background" />
+
+    <!-- Register Text -->
+    <TextView
+        android:id="@+id/registerLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register here."
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

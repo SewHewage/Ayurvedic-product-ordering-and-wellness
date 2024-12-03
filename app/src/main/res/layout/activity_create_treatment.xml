@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Treatment Name -->
+    <EditText
+        android:id="@+id/treatmentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Treatment Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Treatment Description -->
+    <EditText
+        android:id="@+id/treatmentDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Treatment Description"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:gravity="top"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Treatment Duration -->
+    <EditText
+        android:id="@+id/treatmentDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Treatment Duration (e.g., 30 mins)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Treatment Cost -->
+    <EditText
+        android:id="@+id/treatmentCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Treatment Cost (e.g., 1500.00)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveTreatmentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Treatment"
+        android:backgroundTint="@color/ayurvedic_button"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

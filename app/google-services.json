@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "930740734970",
+    "project_id": "ayushwellness2",
+    "storage_bucket": "ayushwellness2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930740734970:android:0650fcdee6c81d6b823243",
+        "android_client_info": {
+          "package_name": "com.example.ayushwellness"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSaR0fpWJVziWOORoGj5B1nUM-jzxsyHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

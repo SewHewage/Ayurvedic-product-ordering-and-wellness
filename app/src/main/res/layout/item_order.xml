@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:padding="16dp"
+    tools:context=".ManageOrdersActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Order ID -->
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order #123"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Order Status -->
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Pending"
+            android:textColor="#FF6347" />
+
+        <!-- Order Date -->
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 12/12/2024"
+            android:textSize="14sp" />
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/orderTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: $50.00"
+            android:textSize="14sp"
+            android:textColor="#4CAF50" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

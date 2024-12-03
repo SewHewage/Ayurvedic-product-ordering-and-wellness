@@ -1,0 +1,84 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MakeAppointmentActivity">
+
+    <!-- Doctor Selection -->
+    <TextView
+        android:id="@+id/tv_select_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Doctor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner_doctors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Date Picker -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_select_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@color/ayurvedic_button"
+        android:text="Choose Date" />
+
+    <TextView
+        android:id="@+id/tv_selected_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No date selected"
+        android:layout_marginTop="8dp" />
+
+    <!-- Time Picker -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btn_select_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ayurvedic_button"
+        android:textColor="@android:color/black"
+        android:text="Choose Time" />
+
+    <TextView
+        android:id="@+id/tv_selected_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No time selected"
+        android:layout_marginTop="8dp" />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/btn_confirm_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Appointment"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/ayurvedic_button"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

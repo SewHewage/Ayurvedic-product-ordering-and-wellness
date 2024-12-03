@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Doctor's Name -->
+        <TextView
+            android:id="@+id/tv_doctor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <!-- Appointment Date -->
+        <TextView
+            android:id="@+id/tv_appointment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date: 01/01/2024"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#555555" />
+
+        <!-- Appointment Time -->
+        <TextView
+            android:id="@+id/tv_appointment_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: 10:00 AM"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#555555" />
+
+        <!-- User's Name -->
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient: Sewmini"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

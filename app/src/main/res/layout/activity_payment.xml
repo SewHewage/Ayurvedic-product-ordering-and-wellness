@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/payment_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/payment_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:paddingBottom="8dp"/>
+
+    <!-- Total Amount (may include shipping, taxes, etc.) -->
+    <TextView
+        android:id="@+id/payment_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: Rs. 0"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:paddingBottom="16dp"/>
+
+    <!-- Pay Now Button -->
+    <Button
+        android:id="@+id/pay_now_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now"
+        android:textSize="18sp"
+        android:backgroundTint="@color/ayurvedic_button"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

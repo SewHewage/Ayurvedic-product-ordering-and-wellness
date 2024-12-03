@@ -1,0 +1,292 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDashboardActivity">
+
+    <!-- Profile Section -->
+    <LinearLayout
+        android:id="@+id/profile_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:contentDescription="Profile Image" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/profile_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.85">
+
+        <!-- View Ayurvedic Products -->
+        <LinearLayout
+            android:id="@+id/view_products_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="viewProducts">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_products"
+                android:contentDescription="View Ayurvedic Products" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="View Ayurvedic Products"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+
+        <!-- Check Consultant Availability -->
+        <LinearLayout
+            android:id="@+id/check_consultant_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="checkConsultant">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/consultant_icon"
+                android:contentDescription="Check Consultant Availability" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Check Consultant Availability"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+
+        <!-- Make an Appointment -->
+        <LinearLayout
+            android:id="@+id/make_appointment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="makeAppointment">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_appointment"
+                android:contentDescription="Make an Appointment" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Make an Appointment"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+
+        <!-- Buy Ayurvedic Products -->
+        <LinearLayout
+            android:id="@+id/buy_products_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="buyProducts">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_buy"
+                android:contentDescription="Buy Ayurvedic Products" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Buy Ayurvedic Products"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+
+        <!-- Track Orders -->
+        <LinearLayout
+            android:id="@+id/track_orders_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="trackOrders">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_track"
+                android:contentDescription="Track Orders" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Track Orders"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+
+        <!-- View Appointments -->
+        <LinearLayout
+            android:id="@+id/view_cart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="viewAppointments">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_cart"
+                android:contentDescription="View Cart" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="View Cart"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+        <!-- View Appointments -->
+        <LinearLayout
+            android:id="@+id/view_appointments_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="viewAppointments">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_view"
+                android:contentDescription="View Appointments" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="View Appointments"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D3A0A6" />
+
+        <!-- Logout -->
+        <LinearLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="logout">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_logout"
+                android:contentDescription="Logout" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Logout"
+                android:textColor="@color/brown"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +94 754 785 124\nEmail: ayushwelleness@yahoo.com"
+        android:textColor="#D3A0A6"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

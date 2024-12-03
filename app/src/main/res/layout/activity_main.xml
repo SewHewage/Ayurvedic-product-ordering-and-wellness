@@ -1,0 +1,77 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/ayurvedic_background">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/logo" />
+
+    <!-- Title -->
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Ayurvedic Wellness"
+        android:textSize="22sp"
+        android:textColor="@color/ayurvedic_text"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="12dp"
+        android:textColor="@color/ayurvedic_text" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/input_background"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/ayurvedic_text" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="16sp"
+        android:backgroundTint="@color/ayurvedic_accent"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Register Link -->
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register here."
+        android:textSize="14sp"
+        android:textColor="@color/ayurvedic_button"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+</LinearLayout>
